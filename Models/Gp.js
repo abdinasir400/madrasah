@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 
 const GpSchema = new mongoose.Schema({
+    Student:{
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Student'
+    },
     NameOfGp: {
         type: String,
         required: true
