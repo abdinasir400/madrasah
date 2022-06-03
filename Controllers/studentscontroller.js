@@ -1,11 +1,13 @@
 const asyncHandler = require('express-async-handler')
+const Student = require('../Models/Student')
 const student = require('../Models/Student')
 
 // @desc Get students
 // @route Get /api/student
 // @access private
 const getStudents = asyncHandler(async (req,res) => {
-    res.status (200).json({ message : 'Get students'})
+    const students = await Student.find()
+    res.status (200).json({ students})
 })
 
 // @desc Post students

@@ -3,35 +3,35 @@ const mongoose = require('mongoose')
 const StudentSchema = new mongoose.Schema({
     FirstName: {
         type: String,
-        required: true
+        required: [true, 'Please add First Name']
     },
     Surname: {
         type: String,
-        required: true
+        required: [true, 'Please add Surname']
     },
     DOB: {
         type: Date,
-        required: true
+        required: [true, 'Please add DOB']
     },
     Gender: {
         type : String,
-        required: true
+        required: [true, 'Please add DOB']
     },
     Address: {
         type : String,
-        required: true
+        required: [true, 'Please add Address']
     },
     Postcode: {
         type : String,
-        required: true
+        required: [true, 'Please add Postcode']
     },
     City: {
         type : String,
-        required: true
+        required: [true, 'Please add City']
     },
     AdmissionDate: {
         type : Date,
-        required: false
+        required: [false, 'Please add Admission Date']
     }
 })
 
