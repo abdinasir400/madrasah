@@ -18,21 +18,23 @@ const StudentSchema = new mongoose.Schema({
         required: [true, 'Please add DOB']
     },
     Address: {
+        street : {
         type : String,
         required: [true, 'Please add Address']
-    },
-    Postcode: {
-        type : String,
-        required: [true, 'Please add Postcode']
-    },
-    City: {
-        type : String,
-        required: [true, 'Please add City']
-    },
+        },
+        Postcode: {
+            type : String,
+            required: [true, 'Please add Postcode']
+        },
+        City: {
+            type : String,
+            required: [true, 'Please add City']
+    }},
     AdmissionDate: {
         type : Date,
         required: [false, 'Please add Admission Date']
-    }
+    },
 })
 
-module.exports = Student = mongoose.model('student',StudentSchema);
+
+module.exports  = mongoose.model('Student',StudentSchema);
