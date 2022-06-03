@@ -1,4 +1,5 @@
 const asyncHandler = require('express-async-handler')
+const parent = require('../Models/Parent')
 
 // @desc Get parent
 //@route Get /api/parents

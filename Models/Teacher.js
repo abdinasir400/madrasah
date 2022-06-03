@@ -11,7 +11,6 @@ const TeacherSchema = new mongoose.Schema({
     },
     Gender: {
         type : String,
-        enum: genders,
         required: true
     },
     Address: {
@@ -41,4 +40,4 @@ const TeacherSchema = new mongoose.Schema({
     },
 })
 
-module.exports = Teacher = mongoose.model('parent',StudentSchema);
+module.exports = Teacher = mongoose.model('teacher',TeacherSchema);

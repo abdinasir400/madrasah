@@ -1,4 +1,5 @@
 const asyncHandler = require('express-async-handler')
+const teacher = require('../Models/Teacher')
 
 // @desc Get teacher
 // @route Get /api/teachers

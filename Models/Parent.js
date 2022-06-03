@@ -10,13 +10,12 @@ const ParentSchema = new mongoose.Schema({
         required: true
     },
     Relationship: {
-        type: string,
+        type: String,
         enum: ['Father','Mother'],
         required: true
     },
     Gender: {
         type : String,
-        enum: genders,
         required: true
     },
     Address: {
