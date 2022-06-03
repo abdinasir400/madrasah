@@ -1,21 +1,32 @@
-const express =require('express')
-const router = express.Router()
+const express =require('express');
+const router = express.Router();
+const {getStudents,deleteStudents, setStudents, updateStudents} = require ('../Controllers/studentscontroller')
 
-router.get('/',(req,res)=>{
-    res.status(200).json({message:'Get Students'})
-})
+// @route Get Students
+// @desc Get /api/students
+// @access private
 
-router.post('/',(req,res)=>{
-    res.status(200).json({message:'Set Students'})
-})
+router.get('/', getStudents)
 
-router.put('/:id',(req,res)=>{
-    res.status(200).json({message:`Update Students ${req.params.id}`})
-})
+// @route Post Students
+// @desc Register new students /api/students
+// @access private
 
-router.delete('/:id',(req,res)=>{
-    res.status(200).json({message:`Delete Students ${req.params.id}`})
-})
+router.post('/',setStudents)
+
+// @route Update Students
+// @desc Get /api/students
+// @access private
+
+router.put('/:id',updateStudents)
+
+// @route Delete Students
+// @desc Delete /api/students
+// @access private
+
+router.delete('/:id',deleteStudents)
+
+
 
 
 module.exports = router
