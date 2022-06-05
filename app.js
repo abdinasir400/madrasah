@@ -20,7 +20,7 @@ const port = process.env.PORT || 5000
 app.use('/api/students',require('./Routes/studentsroutes'))
 app.use('/api/parents',require('./Routes/parentsroutes'))
 app.use('/api/teachers',require('./Routes/teachersroutes'))
-app.use('/api/auth',require('./Routes/auth'))
+app.use('/api/users',require('./Routes/userroutes'))
 
 app.use(errorHandler)
 app.listen(port,() => console.log(`Server started on port ${port}`))
