@@ -1,11 +1,6 @@
 const mongoose = require('mongoose')
 
 const ParentSchema = new mongoose.Schema({
-    Student:{
-        type: mongoose.Schema.Types.ObjectId,
-        required: true,
-        ref: 'Student'
-    },
     FirstName: {
         type: String,
         required: true

@@ -40,4 +40,4 @@ const TeacherSchema = new mongoose.Schema({
     },
 })
 
-module.exports = Teacher = mongoose.model('teacher',TeacherSchema);
+module.exports = mongoose.model('Teacher',TeacherSchema);

@@ -20,6 +20,7 @@ const setStudents = asyncHandler(async (req,res) => {
         throw new Error('Please add all the information')
     }
     const addStudents = await Student.create(req.body)
+    
     res.status (200).json(addStudents)
 })
 
