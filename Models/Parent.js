@@ -42,4 +42,4 @@ const ParentSchema = new mongoose.Schema({
 
 })
 
-module.exports = Parent = mongoose.model('parent',ParentSchema);
+module.exports = Parent = mongoose.model('Parent',ParentSchema);

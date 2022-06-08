@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const Teacher = require('../Models/Teacher')
-const teacher = require('../Models/Teacher')
+
 
 // @desc Get teacher
 // @route Get /api/teachers
@@ -30,7 +30,7 @@ if (teacherExists) {
 }
 
     // Create teacher
-const newteacher = await teacher.create({
+const newteacher = await Teacher.create({
     FirstName,
     Surname,
     Gender,
@@ -72,7 +72,7 @@ const newteacher = await teacher.create({
 // @access private
 
 const updateTeachers = asyncHandler( async (req,res) => {
-  const  teacher = await teacher.findById(req.params.id)
+  const  teacher = await Teacher.findById(req.params.id)
 
   if(!teacher){
       res.status(400)
@@ -88,8 +88,15 @@ const updateTeachers = asyncHandler( async (req,res) => {
 // @route Delete /api/teachers/:id
 // @access private
 const deleteTeachers = asyncHandler( async (req,res) => {
+  const  teacher = await Teacher.findById(req.params.id)
+
+  if(!teacher){
+    res.status(400)
+    throw new Error('teacher not found')
+  }
   
-    res.status (200).json({ message : `Delete teachers ${req.params.id}`})
+  await teacher.remove()
+  res.status (200).json({id: req.params.id})
 })
 
 
