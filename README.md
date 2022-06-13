@@ -1,9 +1,10 @@
 # Madrasah
 
-This is the first time i have created a readme file
+This is the readme file for the Madrasah backend
 
 ## About
 
 - Hey
 
 ## Dependencies
+
