@@ -1,6 +1,6 @@
 # Madrasah
 
-This is the first time i have created a readme file
+This is the readme file for the Madrasah backend
 
 ## Getting Started
 
@@ -29,6 +29,21 @@ npm run dev
 
 ## About
 
+<<<<<<< HEAD
+- This 
+
+## Getting Started
+This project will be built using MERN stack
+
+## Features of the API Backend
+
+
+
+
+
+## Dependencies
+
+=======
 -
 
 ## Dependencies
@@ -116,3 +131,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+>>>>>>> 15a725b54e921796041715d168c2e88188f1a6f0
