@@ -7,8 +7,18 @@ const Student = require('../Models/Student')
 // @access private
 const getStudents = asyncHandler(async (req,res) => {
     const students = await Student.find()
+    
 
     res.status (200).json({count:students.length,students})
+})
+
+// @desc Get single students
+// @route Get /api/student
+// @access private
+const getStudent = asyncHandler(async (req,res) => {
+    const student = await Student.findById(req.params.id)
+
+    res.status (200).json({student})
 })
 
 // @desc Post students
@@ -58,4 +68,4 @@ const deleteStudents = asyncHandler (async (req,res) => {
 
 
 
-module.exports = {getStudents,setStudents, updateStudents, deleteStudents}
+module.exports = {getStudents,setStudents, updateStudents, deleteStudents,getStudent}

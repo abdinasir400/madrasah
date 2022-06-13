@@ -1,12 +1,18 @@
 const express =require('express');
 const router = express.Router();
-const {getStudents,deleteStudents, setStudents, updateStudents} = require ('../Controllers/studentscontroller')
+const {getStudents,deleteStudents, setStudents, updateStudents,getStudent} = require ('../Controllers/studentscontroller')
 
 // @route Get Students
 // @desc Get /api/students
 // @access private
 
 router.get('/', getStudents)
+
+// @route Get Students
+// @desc Get /api/students
+// @access private
+
+router.get('/:id', getStudent)
 
 // @route Post Students
 // @desc Register new students /api/students

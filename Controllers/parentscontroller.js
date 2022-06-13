@@ -11,6 +11,15 @@ const getParents = asyncHandler(async(req,res) => {
     res.status (200).json({count : Parents.length, Parents})
 })
 
+// @desc Get single parent
+// @route Get /api/student
+// @access private
+const getParent = asyncHandler(async (req,res) => {
+    const parent = await Parent.findById(req.params.id)
+
+    res.status (200).json({parent})
+})
+
 // @desc Post parents
 // @route Post /api/parents
 // @access private
@@ -59,4 +68,4 @@ const deleteParents = asyncHandler(async (req,res) => {
 
 
 
-module.exports = {getParents,setParents, updateParents, deleteParents}
+module.exports = {getParents,getParent,setParents, updateParents, deleteParents}
