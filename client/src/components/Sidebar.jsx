@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Parents() {
+const Sidebar = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ function Parents() {
   )
 }
 
-export default Parents
+export default Sidebar
+
