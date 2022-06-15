@@ -1,6 +1,6 @@
 # Madrasah
 
-This is the readme file for the Madrasah backend
+This is the readme file for the Madrasah App
 
 ## Getting Started
 
@@ -10,17 +10,27 @@ The project is built using MERN stack and to start working on it, run the follow
 git clone https://github.com/abdinasir400/madrasah
 ```
 
-Let's add dependencies to the project:
+Now let's add dependencies to the project, open two terminals (one for client side and one for server side)
 
 ```bash
-cd madrasah
+# Frontend (Client Side)
+cd client
+npm install
+
+# Backend (Server Side)
+cd server
 npm install
 ```
 
-To get the application up and running, run the following command:
+To get the application up and running, run the following commands:
 
 ```bash
+# Frontend (Client Side)
 npm run start
+
+# Backend (Server Side)
+npm run server
+
 ```
 
 ## About
@@ -32,7 +42,8 @@ npm run start
 - Built with Bootstrap and React-Router
 - Create and manage students records with MongoDB backend
 - Complete Layer 6 Authentication using Firebase API
+<!-- - Forgot to mention, this is a CRUD application -->
 
 ## Features of the API Backend
-
+ 
 ## Dependencies
