@@ -25,7 +25,12 @@ npm install
 To get the application up and running, run the following commands:
 
 ```bash
+# Frontend (Client Side)
 npm run start
+
+# Backend (Server Side)
+npm run server
+
 ```
 
 ## About
