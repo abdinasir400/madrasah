@@ -42,6 +42,7 @@ npm run server
 - Built with Bootstrap and React-Router
 - Create and manage students records with MongoDB backend
 - Complete Layer 6 Authentication using Firebase API
+<!-- - Forgot to mention, this is a CRUD application -->
 
 ## Features of the API Backend
  
