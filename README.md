@@ -45,5 +45,21 @@ npm run server
 <!-- - Forgot to mention, this is a CRUD application -->
 
 ## Features of the API Backend
- 
-## Dependencies
+
+## Dependencies and Packages
+
+### Frontend
+
+- (React)[https://reactjs.org/]
+- (Bootstrap)[https://getbootstrap.com/]
+- (React-Bootstrap)[https://react-bootstrap.github.io/]
+- (Next.js)[https://nextjs.org/]
+
+### Backend
+
+- (Next.js)[https://nextjs.org/]
+
+### Databases & Authentication
+
+- (MongoDB)[https://www.mongodb.com/]
+- (Firebase)[https://firebase.google.com/]
