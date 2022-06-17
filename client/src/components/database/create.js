@@ -25,7 +25,7 @@ export default function Create() {
     const newPerson = { ...form };
 
     // This will add a new record to the database.
-    await fetch("http://localhost:5000/record/add", {
+    await fetch("http://localhost:6000/record/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
